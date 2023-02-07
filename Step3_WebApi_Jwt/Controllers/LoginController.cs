@@ -36,13 +36,14 @@ namespace Step3_WebApi_Jwt.Controllers
 
             var Token = new JwtUserToken();
             if (_loginService.LoginUser(userLogins.UserName, userLogins.Password, out User user))
-            { 
+            {
                 Token = JwtAuthorization.JwtAuthorization.CreateJwtTokenKey(new JwtUserToken()
                 {
+                    UserRole = user.Roles,
                     UserEmail = user.Email,
                     UserName = user.Name,
                     UserId = user.UserId,
-                }, _jwtSettings);
+                }, _jwtSettings); ;
 
                 _logger.LogInformation("User logged in. Token sent");
                 return Ok(Token);

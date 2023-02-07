@@ -24,7 +24,7 @@ namespace Step3_WebApi_Jwt.Controllers
         //GET: api/Quotes
         //GET: api/Quotes/?count={count}
         //Below are good practice decorators to use for a GET request
-        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Policy = null, Roles = "Manager")]
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<GoodQuote>))]
         [ProducesResponseType(400, Type = typeof(string))]

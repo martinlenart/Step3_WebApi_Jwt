@@ -7,7 +7,6 @@
     <UserSecretsId>3d2b8454-7957-4457-9167-d64aaaedb8d3</UserSecretsId>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Step1_WebApi_Initial' " />
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />

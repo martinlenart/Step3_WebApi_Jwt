@@ -13,6 +13,7 @@ namespace Step3_WebApi_Jwt.JwtAuthorization
         {
             IEnumerable<Claim> claims = new Claim[] {
                 new Claim("UserId", userToken.UserId.ToString()),
+                    new Claim(ClaimTypes.Role, userToken.UserRole),
                     new Claim(ClaimTypes.Name, userToken.UserName),
                     new Claim(ClaimTypes.Email, userToken.UserEmail),
                     new Claim(ClaimTypes.NameIdentifier, TokenId.ToString()),
@@ -49,6 +50,7 @@ namespace Step3_WebApi_Jwt.JwtAuthorization
 
             _token.TokenId = tokenId;
             _token.EncryptedToken = new JwtSecurityTokenHandler().WriteToken(JWToken);
+            _token.UserRole = userToken.UserRole;
             _token.UserName = userToken.UserName;
             _token.UserId = userToken.UserId;
             _token.UserEmail = userToken.UserEmail;
