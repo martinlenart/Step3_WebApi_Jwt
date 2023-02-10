@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Diagnostics.Metrics;
 
-using Step3_WebApi_WebApi.Models;
+using Step3_WebApi_Jwt.Models;
 using Step3_WebApi_Jwt.Services;
 using Microsoft.AspNetCore.Authorization;
 

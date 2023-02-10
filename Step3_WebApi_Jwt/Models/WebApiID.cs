@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Step3_WebApi_WebApi.Models
+namespace Step3_WebApi_Jwt.Models
 {
 	public class WebApiID
 	{

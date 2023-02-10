@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Step3_WebApi_WebApi.Logger
+namespace Step3_WebApi_Jwt.Logger
 {
     public sealed class EpochTimestampJsonConverter : JsonConverter
     {

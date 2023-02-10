@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Step3_WebApi_WebApi.Models
+namespace Step3_WebApi_Jwt.Models
 {
 	//interface for Dependecy injection into controller
 	public interface IMockupData

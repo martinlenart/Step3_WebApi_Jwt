@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Microsoft.Extensions.Logging;
 
-namespace Step3_WebApi_WebApi.Logger
+namespace Step3_WebApi_Jwt.Logger
 {
     public sealed class LogMessage
     {

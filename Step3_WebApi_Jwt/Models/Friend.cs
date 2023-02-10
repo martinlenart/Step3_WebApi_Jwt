@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Step3_WebApi_WebApi.Models
+namespace Step3_WebApi_Jwt.Models
 {
     public class Friend
     {

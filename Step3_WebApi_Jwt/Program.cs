@@ -1,9 +1,9 @@
-﻿using Step3_WebApi_WebApi.Logger;
-using Step3_WebApi_WebApi.Models;
+﻿using Step3_WebApi_Jwt.Logger;
+using Step3_WebApi_Jwt.Models;
 using Step3_WebApi_Jwt.Services;
 using Step3_WebApi_Jwt.JwtAuthorization;
 
-namespace Step3_WebApi_WebApi;
+namespace Step3_WebApi_Jwt;
 
 public class Program
 {
