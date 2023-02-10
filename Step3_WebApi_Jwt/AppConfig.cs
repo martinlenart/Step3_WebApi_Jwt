@@ -50,6 +50,7 @@ namespace Step3_WebApi_Jwt
         public static string CurrentDbConnection => ConfigurationRoot.GetValue<string>("CurrentDbConnection");
         public static string CurrentDbConnectionString => ConfigurationRoot.GetConnectionString(CurrentDbConnection);
 
+        public static string SecretMessage => ConfigurationRoot.GetValue<string>("SecretMessage");
         public static List<User> GetUsers
         {
             get
