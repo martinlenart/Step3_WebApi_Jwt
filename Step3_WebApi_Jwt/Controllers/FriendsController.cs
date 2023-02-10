@@ -139,7 +139,8 @@ namespace Step3_WebApi_Jwt.Controllers
         }
 
         //DELETE: api/friends/id
-        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme,
+            Policy = null, Roles = "Manager, Superuser")]
         [HttpDelete("{Id}")]
         [ProducesResponseType(204)]
         [ProducesResponseType(400, Type = typeof(string))]

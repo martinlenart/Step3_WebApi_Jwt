@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>Step1_WebApi_Initial</AssemblyName>
+    <AssemblyName>Step3_WebApi_Jwt</AssemblyName>
     <UserSecretsId>3d2b8454-7957-4457-9167-d64aaaedb8d3</UserSecretsId>
   </PropertyGroup>
 
